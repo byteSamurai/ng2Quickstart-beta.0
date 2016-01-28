@@ -13,10 +13,14 @@
     <script>
         System.config({
             packages: {
-                "/ng2-translate": {"defaultExtension": "js"},
+
                 app: {
                     format: 'register',
                     defaultExtension: 'js'
+                },
+                "/ng2-translate": {"defaultExtension": "js"},
+                map:{
+                    'ng2-translate': 'node_modules/ng2-translate'
                 }
             }
         });
