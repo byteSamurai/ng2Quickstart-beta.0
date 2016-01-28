@@ -13,15 +13,19 @@
     <script>
         System.config({
             packages: {
-
                 app: {
                     format: 'register',
                     defaultExtension: 'js'
                 },
-                "/ng2-translate": {"defaultExtension": "js"},
                 map:{
                     'ng2-translate': 'node_modules/ng2-translate'
                 }
+            },
+            defaultJSExtensions: true,
+            map: {
+                'angular2':"node_modules/angular2",
+                'ng2-translate': 'node_modules/ng2-translate',
+                'rxjs': 'node_modules/rxjs'
             }
         });
         System.import('app/boot')
